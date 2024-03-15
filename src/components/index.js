@@ -1,5 +1,6 @@
+import Footer from "./Footer/Footer";
+import Header from "./Header/Header";
+import LogoutButton from "./Header/LogoutButton";
+import Logo from "./Logo";
 
-import Header from './Header/Header';
-import Footer from './Footer/Footer';
-
-export { Header, Footer}
+export { Footer, Header, Logo, LogoutButton };
