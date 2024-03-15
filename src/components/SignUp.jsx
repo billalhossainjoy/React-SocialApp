@@ -34,34 +34,36 @@ function SignUp() {
       <div>{error && <p> {error}</p>}</div>
       <div>
         <form onSubmit={() => handleSubmit(createAccout())}>
-            <Input
+          <Input
             type="text"
             name="name"
             label="Name:"
             placeholder="type your name"
             {...register("name", {
-                required: true,
+              required: true,
             })}
-            />
-            <Input
+          />
+          <Input
             type="email"
             name="email"
             label="Email:"
             placeholder="type your email"
             {...register("email", {
-                required: true,
+              required: true,
             })}
-            />
-            <Input
+          />
+          <Input
             type="password"
             name="password"
             label="Password:"
             placeholder="type your password"
             {...register("password", {
-                required: true,
+              required: true,
             })}
-            />
-            <Button type="submit" className="w-full">Create Account</Button>
+          />
+          <Button type="submit" className="w-full">
+            Create Account
+          </Button>
         </form>
       </div>
     </div>
